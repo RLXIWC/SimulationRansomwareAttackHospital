@@ -23,7 +23,7 @@ The simulation is run multiple times to capture the stochastic nature of hospita
 
 ### 📊 Flowchart of the Hospital Model
 
-![Hospital Cyberattack Diagram](images/diagram.png)
+![Hospital Cyberattack Diagram](Python/Flowchart_Hospital.pdf)
 
 ### 🔬 Experiments
 The project contains the following experiments:
