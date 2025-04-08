@@ -54,12 +54,14 @@ To run the simulation and analysis, you need the following dependencies:
 
 - Open AnyLogic, and navigate to File > Open.
 - Select the AnyLogic model file in the repository (e.g., Files/AnyLogicModel/YourModelFile.alp).
-Run the Simulation:
 
-3. Open an Experiment
+3. Select an Experiment
+
+- MonteCarlo: Main --> Important Recovery Parameters or Critical Hospital Departments
+- Calibration or CalibrationRadioLab --> Calibration of missing Input Parameters like Doctors, Nurses, Arrival Rates
 
 4. Start the simulation by clicking the "Run" button in AnyLogic.
-Configure the simulation parameters as needed. All parameters are adjustable, with the recovery parameters and the arrival rates being important.
+Configure the simulation parameters as needed (Duration of Simulation, Ransomware Active, Specific Department, Recovery Parameters). All parameters are adjustable, with the recovery parameters and the arrival rates being important.
 - If using the free version of AnyLogic, note the 50,000 agents per run limit. If this limit is exceeded, the simulation will break or stop and fail. Therefore, the simulation is limited to 50 days.
 5. Export Simulation Results:
 - The results of the simulation are exported at the end and saved in the following folders:
@@ -68,6 +70,10 @@ Configure the simulation parameters as needed. All parameters are adjustable, wi
   - Files/Statistics: Contains the statistical files throughout a simulation run.
 - All results are saved as CSV files.
 
-6. Control Ransomware Attack:
+6. Control Monte Carlo Simulation:
 
 - You can turn on or off the ransomware attack by setting the StartRansomwareAttack parameter. Set it to -1 to turn off the ransomware attack.
+- All Parameters are stored inside the Main-Agent with Heading
+- The Patient Agent also has some Parameters. They are not adjustable, but they will change if the patient is flowing through the Model
+- The different Blocks of the Process Modeling Library contain in the information box additional information like the reference of the chosen value
+
